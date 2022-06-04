@@ -1,0 +1,40 @@
+<launch>
+	<arg name="uwb_unknown_model" default="$(find uwb_wsn_simulation)/models/unknown_sensor/model.sdf" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_unknown_0" args="-sdf -model uwb_unknown_0 -x 1.7050502485070131 -y -2.745831363303134 -z 1.0 -file $(arg uwb_unknown_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_unknown_0" args="1.7050502485070131 -2.745831363303134 0.0 0 0 0 1 map uwb_unknown_0 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_unknown_1" args="-sdf -model uwb_unknown_1 -x 3.069844256707192 -y -2.1409764964670686 -z 1.0 -file $(arg uwb_unknown_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_unknown_1" args="3.069844256707192 -2.1409764964670686 0.0 0 0 0 1 map uwb_unknown_1 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_unknown_2" args="-sdf -model uwb_unknown_2 -x -0.7071880192719391 -y -2.823157402816806 -z 1.0 -file $(arg uwb_unknown_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_unknown_2" args="-0.7071880192719391 -2.823157402816806 0.0 0 0 0 1 map uwb_unknown_2 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_unknown_3" args="-sdf -model uwb_unknown_3 -x 2.0362279003059065 -y -2.045716163148299 -z 1.0 -file $(arg uwb_unknown_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_unknown_3" args="2.0362279003059065 -2.045716163148299 0.0 0 0 0 1 map uwb_unknown_3 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_unknown_4" args="-sdf -model uwb_unknown_4 -x 0.2579781412534281 -y 2.3315650529949536 -z 1.0 -file $(arg uwb_unknown_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_unknown_4" args="0.2579781412534281 2.3315650529949536 0.0 0 0 0 1 map uwb_unknown_4 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_unknown_5" args="-sdf -model uwb_unknown_5 -x -1.4327060148967155 -y 0.42598080506127545 -z 1.0 -file $(arg uwb_unknown_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_unknown_5" args="-1.4327060148967155 0.42598080506127545 0.0 0 0 0 1 map uwb_unknown_5 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_unknown_6" args="-sdf -model uwb_unknown_6 -x 0.8301695327968943 -y 1.9527695933731195 -z 1.0 -file $(arg uwb_unknown_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_unknown_6" args="0.8301695327968943 1.9527695933731195 0.0 0 0 0 1 map uwb_unknown_6 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_unknown_7" args="-sdf -model uwb_unknown_7 -x 3.9290561591467563 -y -1.8853896950486249 -z 1.0 -file $(arg uwb_unknown_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_unknown_7" args="3.9290561591467563 -1.8853896950486249 0.0 0 0 0 1 map uwb_unknown_7 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_unknown_8" args="-sdf -model uwb_unknown_8 -x 3.199617051624517 -y 1.4149185278624552 -z 1.0 -file $(arg uwb_unknown_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_unknown_8" args="3.199617051624517 1.4149185278624552 0.0 0 0 0 1 map uwb_unknown_8 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_unknown_9" args="-sdf -model uwb_unknown_9 -x -3.898137971149053 -y -3.7292273217064595 -z 1.0 -file $(arg uwb_unknown_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_unknown_9" args="-3.898137971149053 -3.7292273217064595 0.0 0 0 0 1 map uwb_unknown_9 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_unknown_10" args="-sdf -model uwb_unknown_10 -x -2.98157767794763 -y -3.976748775563175 -z 1.0 -file $(arg uwb_unknown_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_unknown_10" args="-2.98157767794763 -3.976748775563175 0.0 0 0 0 1 map uwb_unknown_10 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_unknown_11" args="-sdf -model uwb_unknown_11 -x 1.8992091696390592 -y 3.0005531942517374 -z 1.0 -file $(arg uwb_unknown_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_unknown_11" args="1.8992091696390592 3.0005531942517374 0.0 0 0 0 1 map uwb_unknown_11 100" />
+
+</launch>

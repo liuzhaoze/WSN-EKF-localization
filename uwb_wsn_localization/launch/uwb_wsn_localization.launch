@@ -1,0 +1,8 @@
+<launch>
+
+    <!-- <node pkg="uwb_wsn_localization" type="ekf_localization.py" name="ekf_localization" output='screen' /> -->
+    <!-- <node pkg="uwb_wsn_localization" type="improved_ekf_localization.py" name="ekf_localization" output='screen' /> -->
+    <node pkg="uwb_wsn_localization" type="improved_ekf_localization_with_internode_measurement.py" name="ekf_localization" output='screen' />
+    <node pkg="uwb_wsn_localization" type="plot_slam_result.py" name="plot_slam_result" />
+
+</launch>

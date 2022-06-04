@@ -1,0 +1,11 @@
+<launch>
+
+    <include file="$(find uwb_wsn_simulation)/launch/uwb_wsn_scenario.launch" />
+
+    <include file="$(find uwb_wsn_simulation)/launch/uwb_anchor_set.launch" />
+
+    <include file="$(find uwb_wsn_simulation)/launch/uwb_unknown_set.launch" />
+
+    <include file="$(find uwb_wsn_simulation)/launch/navigation.launch" />
+
+</launch>

@@ -1,0 +1,13 @@
+<launch>
+	<arg name="uwb_anchor_model" default="$(find uwb_wsn_simulation)/models/anchor_sensor/model.sdf" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_anchor_0" args="-sdf -model uwb_anchor_0 -x 0 -y 0.5 -z 1.0 -file $(arg uwb_anchor_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_anchor_0" args="0 0.5 0.0 0 0 0 1 map uwb_anchor_0 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_anchor_1" args="-sdf -model uwb_anchor_1 -x 0 -y -0.5 -z 1.0 -file $(arg uwb_anchor_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_anchor_1" args="0 -0.5 0.0 0 0 0 1 map uwb_anchor_1 100" />
+
+	<node pkg="gazebo_ros" type="spawn_model" name="spawn_uwb_anchor_2" args="-sdf -model uwb_anchor_2 -x 0.866 -y 0 -z 1.0 -file $(arg uwb_anchor_model)" />
+	<node pkg="tf" type="static_transform_publisher" name="uwb_anchor_2" args="0.866 0 0.0 0 0 0 1 map uwb_anchor_2 100" />
+
+</launch>

@@ -1,0 +1,4 @@
+---
+geometry_msgs/Point[] result
+int64[] anchor_id
+int64[] localized

@@ -1,0 +1,6 @@
+<launch>
+
+    <node pkg="uwb_wsn_simulation" type="uwb_wsn_distance.py" name="uwb_wsn_distance" output='screen' />
+    <node pkg="uwb_wsn_simulation" type="plot_communication_state.py" name="communication_state_plotter" output='screen' />
+
+</launch>
